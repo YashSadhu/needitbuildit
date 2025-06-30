@@ -1,6 +1,5 @@
 import React from 'react';
 import { PenTool, Clock, Grid3X3, List, BarChart3, Edit3, Download, FileText, Settings, Home } from 'lucide-react';
-import { StorageStatus } from './StorageStatus';
 
 interface HeaderProps {
   viewMode: 'timeline' | 'hierarchy';
@@ -45,15 +44,12 @@ export const Header: React.FC<HeaderProps> = ({
               <PenTool className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Story Timeline System</h1>
-              <p className="text-sm text-gray-600">Comprehensive story planning and timeline management</p>
+              <h1 className="text-2xl font-bold text-gray-900">Storytelling Timeline</h1>
+              <p className="text-sm text-gray-600">Intuitive story planning and narrative organization</p>
             </div>
           </div>
           
           <div className="flex items-center gap-4">
-            {/* Storage Status */}
-            <StorageStatus />
-
             {/* View Mode Selector */}
             <div className="flex items-center bg-gray-100 rounded-lg p-1">
               <button

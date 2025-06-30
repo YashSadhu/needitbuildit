@@ -17,7 +17,8 @@ import {
   Shield,
   Users,
   Star,
-  ChevronDown
+  ChevronDown,
+  Mail
 } from 'lucide-react';
 import { ContainerScroll } from './ui/container-scroll-animation';
 
@@ -109,7 +110,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
                 <PenTool className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">Story Timeline</span>
+              <span className="text-xl font-bold text-gray-900">Storytelling Timeline</span>
             </div>
             
             <div className="flex items-center gap-4">
@@ -119,6 +120,15 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
               <button className="text-gray-600 hover:text-gray-900 font-medium">
                 About
               </button>
+              <div className="flex items-center gap-2 text-gray-600">
+                <Mail className="w-4 h-4" />
+                <a 
+                  href="mailto:networks.yash@gmail.com" 
+                  className="hover:text-blue-600 transition-colors font-medium"
+                >
+                  networks.yash@gmail.com
+                </a>
+              </div>
               <button
                 onClick={onGetStarted}
                 className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
@@ -182,11 +192,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
                   Begin Your Story
                   <ArrowRight className="w-5 h-5" />
                 </button>
-                <button className="flex items-center gap-2 px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-colors font-semibold text-lg">
+                <button 
+                  onClick={onGetStarted}
+                  className="flex items-center gap-2 px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-xl hover:border-gray-400 hover:bg-gray-50 transition-colors font-semibold text-lg"
+                >
                   See It In Action
                   <ChevronDown className="w-5 h-5" />
                 </button>
-              </motion.div>
+              </div>
             </div>
           }
         >
@@ -373,7 +386,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
               Loved by Storytellers Worldwide
             </h2>
             <p className="text-xl text-gray-600">
-              See what creators are saying about Story Timeline
+              See what creators are saying about Storytelling Timeline
             </p>
           </div>
 
@@ -438,13 +451,22 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
               <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
                 <PenTool className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">Story Timeline</span>
+              <span className="text-xl font-bold text-white">Storytelling Timeline</span>
             </div>
             
             <div className="flex items-center gap-6 text-gray-400">
               <button className="hover:text-white transition-colors">Privacy</button>
               <button className="hover:text-white transition-colors">Terms</button>
               <button className="hover:text-white transition-colors">Support</button>
+              <div className="flex items-center gap-2">
+                <Mail className="w-4 h-4" />
+                <a 
+                  href="mailto:networks.yash@gmail.com" 
+                  className="hover:text-white transition-colors"
+                >
+                  networks.yash@gmail.com
+                </a>
+              </div>
             </div>
           </div>
           

@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
               <PenTool className="w-5 h-5 text-white" />
             </div>
             <div>
-              <span className="text-lg font-bold text-gray-900">Story Timeline</span>
+              <span className="text-lg font-bold text-gray-900">Storytelling Timeline</span>
               <p className="text-sm text-gray-600">Crafted by storyteller for storytellers and visionaries © 2025 needitbuildit</p>
             </div>
           </div>

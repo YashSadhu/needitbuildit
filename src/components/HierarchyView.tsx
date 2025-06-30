@@ -14,10 +14,11 @@ import {
   sortableKeyboardCoordinates,
   verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
-import { Plus, Folder, FileText } from 'lucide-react';
+import { Plus, Folder, FileText, HardDrive } from 'lucide-react';
 import { TimelineCard, CardGroup } from '../types';
 import { DraggableGroup } from './DraggableGroup';
 import { DraggableCard } from './DraggableCard';
+import { StorageStatus } from './StorageStatus';
 
 interface HierarchyViewProps {
   cards: TimelineCard[];
@@ -116,21 +117,28 @@ export const HierarchyView: React.FC<HierarchyViewProps> = ({
           </p>
         </div>
         
-        <div className="flex items-center gap-2">
-          <button
-            onClick={onAddGroup}
-            className="flex items-center gap-2 px-3 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-          >
-            <Plus className="w-4 h-4" />
-            Group
-          </button>
-          <button
-            onClick={onAddCard}
-            className="flex items-center gap-2 px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-          >
-            <Plus className="w-4 h-4" />
-            Card
-          </button>
+        <div className="flex items-center gap-4">
+          {/* Storage Status in corner */}
+          <div className="text-xs">
+            <StorageStatus />
+          </div>
+          
+          <div className="flex items-center gap-2">
+            <button
+              onClick={onAddGroup}
+              className="flex items-center gap-2 px-3 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+            >
+              <Plus className="w-4 h-4" />
+              Group
+            </button>
+            <button
+              onClick={onAddCard}
+              className="flex items-center gap-2 px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+            >
+              <Plus className="w-4 h-4" />
+              Card
+            </button>
+          </div>
         </div>
       </div>
 
