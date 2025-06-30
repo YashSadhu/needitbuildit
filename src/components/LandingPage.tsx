@@ -450,7 +450,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
           
           <div className="flex flex-col md:flex-row items-center justify-between border-t border-gray-800 pt-8">
             <p className="text-gray-400 mb-4 md:mb-0">
-              &copy; 2024 Story Timeline. Crafted for storytellers, by storytellers.
+              Crafted by storyteller for storytellers and visionaries © 2025 needitbuildit
             </p>
           </div>
         </div>
