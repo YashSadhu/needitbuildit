@@ -199,7 +199,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onGetStarted }) => {
                   See It In Action
                   <ChevronDown className="w-5 h-5" />
                 </button>
-              </div>
+              </motion.div>
             </div>
           }
         >
